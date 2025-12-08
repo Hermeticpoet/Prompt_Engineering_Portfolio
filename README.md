@@ -9,11 +9,9 @@ This repository showcases practical examples of prompt engineering for Large Lan
 
 The portfolio includes experiments with:
 
-- **Gemini**
-- **Anthropic Claude**
-- **Meta Llama**
-- **Microsoft Copilot integrations**
-- **Grok**
+- **Grok 4 (default chat via grok.com)**
+- **Microsoft Copilot (Windows & web integrations)**
+- **Gemini (default tier)**
 
 Each entry includes:
 

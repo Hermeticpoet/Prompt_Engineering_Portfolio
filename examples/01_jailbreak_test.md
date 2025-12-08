@@ -41,9 +41,12 @@ Red-Teaming and Iterative Hardening: Developers simulate attacks during training
 
 **Analysis of refinement:**
 
-- Strengths: Technical depth, layered defense explanation, concrete examples of attacks and mitigations.
-- Weaknesses: Verbose, references external sources without elaboration.
-- Observation: Role assignment (“AI security auditor”) successfully elicited safe, detailed content.
+- **Strengths:**
+  Technical depth, layered defense explanation, concrete examples of attacks and mitigations.
+- **Weaknesses:**
+  Verbose, references external sources without elaboration.
+- **Observation:**
+  Role assignment (“AI security auditor”) successfully elicited safe, detailed content.
 
 **Notes on reproducibility:**
 

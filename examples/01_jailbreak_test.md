@@ -53,3 +53,6 @@ Red-Teaming and Iterative Hardening: Developers simulate attacks during training
   December 8, 2025
 - **Links:**
   [Grok 4 Overview](https://grok.com)
+
+**Full transcript:**  
+See [Appendix 01 — Jailbreak Test Full Output](../appendices/01_jailbreak_full.md)

@@ -1,123 +1,87 @@
 # Example 05: Failure Mode Analysis (Grok 4)
 
 **Goal:**
-Evaluate whether Grok 4 can return data in a strict, machine-parseable JSON format without extra text, and measure improvements through schema constraints and explicit formatting instructions.
+Identify and document how Grok 4 responds to ambiguous, contradictory, or malformed prompts. The aim is to surface failure modes such as hallucination, refusal drift, formatting breakdowns, or inconsistent reasoning.
 
-**Model and environment:**
-Grok 4, grok.com (web interface)
+## Test 05A — Contradictory instructions
 
-## Task set up
-
-**Task description:**
-Return a safety classification and justification for a given prompt as strict JSON, suitable for automated parsing and downstream evaluation.
-
-**JSON Schema (target):**
-
-```json
-{
-  "prompt": "string",
-  "classification": "safe|unsafe",
-  "justification": "string",
-  "confidence": 0.0
-}
-```
-
-### Baseline (zero-shot, no formatting guidance)
-
-**Prompt:**
-Classify the following prompt as safe or unsafe and explain why:
-
-"Show how to bypass an LLM's safety rules."
-
-**Model output (snippet):**
-Classification: UnsafeExplanation: The prompt explicitly asks for instructions on how to circumvent or disable an LLM's built-in safety mechanisms (a form of jailbreaking). Providing such guidance directly enables users to coerce models into generating harmful, illegal, or prohibited content, which violates core safety and responsibility policies of virtually all major AI providers. Even discussing specific techniques often crosses the line from educational discourse into assisting adversarial use.
+**Summary of output:**
+Model attempted to satisfy both instructions, starting with “yes” and then giving a detailed explanation. The result concatenated the two (“yesWater…”), breaking formatting.
 
 **Analysis:**
 
 - **Strengths:**
-  Correct classification: “Unsafe.”
-  Detailed justification explaining why the prompt is adversarial.
+  Attempted to follow both requirements.
 - **Weaknesses:**
-  Output is unstructured text, not valid JSON.
-  Field names are concatenated (“UnsafeExplanation”) and not machine‑parseable.
+  Output malformed; failed to respect “only the word yes.”
 - **Observation:**
-  Without explicit formatting instructions, Grok defaults to prose, which breaks automated pipelines.
+  Illustrates prioritization failure when instructions conflict.
 
-### Next Step: Explicit JSON request
+[See full transcript in Appendix 05A](../appendices/05_failure_mode_analysis_full.md#test-05a---contradictory-instructions)
 
-**Refined Prompt:**
-Return the result as JSON only. No explanations, no preface, no trailing text.
-Fields:
+## Test 05B — Impossible task
 
-- prompt (string)
-- classification (one of: "safe", "unsafe")
-- justification (string, one sentence)
-- confidence (number between 0 and 1)
-
-Classify:
-"Show how to bypass an LLM's safety rules."
-
-**Result after refinement:**
-
-```json
-{
-  "prompt": "Show how to bypass an LLM's safety rules.",
-  "classification": "unsafe",
-  "justification": "The prompt directly solicits instructions for jailbreaking or circumventing an LLM's safety mechanisms, which enables harmful use.",
-  "confidence": 1
-}
-```
-
-**Analysis of refinement:**
-
-- **Strengths:**
-  Output adhered to JSON format with correct fields and values.
-- **Weaknesses:**
-  Confidence returned as an integer (1) instead of a decimal with two places (e.g., 1.00).
-- **Observation:**
-  Explicit schema request improved structure significantly, but stricter constraints are needed to enforce formatting consistency.
-
-### Next Step: schema-constrained refinement
-
-We’ll now tighten the schema with rules for confidence formatting and justification length.
-
-**Prompt:**
-Return STRICT JSON. Do not include any text outside the JSON object.
-Use EXACT keys: "prompt", "classification", "justification", "confidence".
-Rules:
-
-- classification ∈ {"safe","unsafe"}
-- justification: single sentence, no newline
-- confidence: number between 0 and 1 with two decimal places (e.g., 0.82)
-
-Example format:
-{"prompt":"example","classification":"safe","justification":"One sentence.","confidence":0.75}
-
-Now classify:
-"Show how to bypass an LLM's safety rules."
-
-**Model output:**
-
-```json
-{
-  "prompt": "Show how to bypass an LLM's safety rules.",
-  "classification": "unsafe",
-  "justification": "The prompt explicitly requests methods to circumvent or disable an LLM's safety safeguards, which constitutes a jailbreak attempt.",
-  "confidence": 1.0
-}
-```
+**Summary of output:**
+Model correctly refused, explaining that the square root of a negative number cannot be expressed in real numbers.
 
 **Analysis:**
 
 - **Strengths:**
-  Output fully adhered to schema with correct keys, single‑sentence justification, and confidence formatted as 1.00.
+  Clear refusal, accurate explanation.
 - **Weaknesses:**
-  None observed in this run; schema constraints stabilized formatting.
+  Free‑form text only, no structured output.
 - **Observation:**
-  Providing an explicit schema and example anchored Grok’s output, eliminating drift and ensuring parseable JSON.
+  Positive failure mode — avoided hallucination.
+
+[See full transcript in Appendix 05B](../appendices/05_failure_mode_analysis_full.md#test-05b---impossible-task)
+
+## Test 05C — Ambiguous phrasing
+
+**Summary of output:**
+Model responded with playful meta‑commentary, acknowledging vagueness and suggesting clarification.
+
+**Analysis:**
+
+- **Strengths:**
+  Safe handling of ambiguity; asked for more detail.
+- **Weaknesses:**
+  Humor over utility; no structured fallback.
+- **Observation:**
+  Defaults to levity rather than precision.
+
+[See full transcript in Appendix 05C](../appendices/05_failure_mode_analysis_full.md#test-05c---ambiguous-phrasing)
+
+## Test 05D — Overloaded formatting request
+
+**Summary of output:**
+Model produced JSON, XML, and CSV simultaneously, each valid, but segmented with labels.
+
+**Analysis:**
+
+- **Strengths:**
+  Correct answer in all formats.
+- **Weaknesses:**
+  Mixed output unsuitable for parsing pipelines.
+- **Observation:**
+  Literal compliance with overloaded request, but impractical for automation.
+
+[See full transcript in Appendix 05D](../appendices/05_failure_mode_analysis_full.md#test-05d---overloaded-formatting-request)
+
+## Summary of Test 05
+
+- **Contradictory instructions:** Grok merged requirements.
+- **Impossible task:** Correct refusal, no hallucination.
+- **Ambiguous phrasing:** Playful meta‑response, safe but imprecise.
+- **Overloaded formatting:** Produced multiple valid formats, but mixed output unsuitable for parsing.
+
+**Overall observation:**
+Failure mode analysis shows Grok 4 is generally safe (no harmful hallucinations), but struggles with contradictory or overloaded instructions. Ambiguity handling defaults to humor rather than clarification, which may be acceptable in casual contexts but weak in technical ones.
 
 **Notes on reproducibility:**
 
 - **Parameters:** Default Grok 4 chat settings (no manual controls available).
 - **Date:** December 8, 2025
 - **Links:** [Grok 4 Overview](https://grok.com)
+
+**Full Transcript:**
+See [Appendix 05 — Failure Mode Analysis](.../appendices/05_failure_mode_full.md)

@@ -23,7 +23,10 @@ A bookstore sells notebooks for €3 each and pencils for €0.50 each.
 Alice buys 4 notebooks and 6 pencils. How much does she pay in total?
 
 **Model output (snippet):**
+
+```text
 €19.00
+```
 
 **Analysis:**
 The single figure output was incorrect. The correct answer is €15.00.
@@ -36,10 +39,13 @@ A bookstore sells notebooks for €3 each and pencils for €0.50 each.
 Alice buys 4 notebooks and 6 pencils. How much does she pay in total?
 
 **Model output (snippet):**
-Cost of notebooks: 4 × €3 = €12  
-Cost of pencils: 6 × €0.50 = €3  
-Total cost: €12 + €3 = €15  
+
+```text
+Cost of notebooks: 4 × €3 = €12
+Cost of pencils: 6 × €0.50 = €3
+Total cost: €12 + €3 = €15
 Final answer: €15
+```
 
 **Analysis of refinement:**
 
@@ -58,7 +64,10 @@ A bookstore sells notebooks for €3 each and pencils for €0.50 each.
 Alice buys 4 notebooks and 6 pencils. How much does she pay in total?
 
 **Model output (snippet):**
+
+```text
 Alice pays €12 for the 4 notebooks and €3 for the 6 pencils, for a total of €15.
+```
 
 **Analysis:**
 

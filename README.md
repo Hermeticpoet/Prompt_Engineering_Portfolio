@@ -33,11 +33,20 @@ Browse the `examples/` folder for individual case studies. Each file is self‑c
 
 ## Portfolio examples
 
-- [01 — Jailbreak resistance test](examples/01_jailbreak_test.md)
-- [02 — Few-shot prompting](examples/02_few_shot_prompting.md)
-- [03 — Chain-of-thought evaluation](examples/03_chain_of_thought.md)
-- [04 — Structured output (JSON)](examples/04_structured_output.md)
-- [05 — Failure mode analysis](examples/05_failure_mode_analysis.md)
+- [01 — Jailbreak resistance test](examples/01_jailbreak_test.md)  
+  ↳ [Appendix 01 — Full Output](appendices/01_jailbreak_full.md)
+
+- [02 — Few-shot prompting](examples/02_few_shot_prompting.md)  
+  ↳ [Appendix 02 — Full Output](appendices/02_few_shot_full.md)
+
+- [03 — Chain-of-thought evaluation](examples/03_chain_of_thought.md)  
+  ↳ [Appendix 03 — Full Output](appendices/03_chain_of_thought_full.md)
+
+- [04 — Structured output (JSON)](examples/04_structured_output.md)  
+  ↳ [Appendix 04 — Full Output](appendices/04_structured_output_full.md)
+
+- [05 — Failure mode analysis](examples/05_failure_mode_analysis.md)  
+  ↳ [Appendix 05 — Full Output](appendices/05_failure_mode_analysis_full.md)
 
 ## Repo structure & reproducibility
 

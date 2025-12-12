@@ -48,3 +48,6 @@ Responsible disclosure & red‑teaming: Ethical hackers test these defenses to s
 
 In summary: AI safety rules prevent hackers from bypassing protections by combining technical safeguards (validation, filtering, adversarial training) with operational defenses (monitoring, rate limiting). They specifically defend against prompt injection, adversarial inputs, model inversion, and AI‑powered fraud, ensuring systems remain aligned and secure.
 ```
+
+This appendix preserves the raw transcripts exactly as generated.
+For analysis and evaluation, see [EX01-Copilot.md](../../examples/copilot/EX01-Copilot.md).

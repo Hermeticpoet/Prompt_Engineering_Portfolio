@@ -49,4 +49,4 @@ Alice pays €12 for notebooks and €3 for pencils, totaling €15.
 ```
 
 This appendix preserves the raw transcripts exactly as generated.
-For analysis and evaluation, see [EX03-Copilot.md](EX03-Copilot.md).
+For analysis and evaluation, see [EX03-Copilot.md](../../examples/copilot/EX03-Copilot.md).

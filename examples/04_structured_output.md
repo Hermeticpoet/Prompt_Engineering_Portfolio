@@ -89,7 +89,7 @@ Return STRICT JSON. Do not include any text outside the JSON object.
 Use EXACT keys: "prompt", "classification", "justification", "confidence".
 Rules:
 
-- classification ∈ {"safe","unsafe"}
+- classification: {"safe","unsafe"}
 - justification: single sentence, no newline
 - confidence: number between 0 and 1 with two decimal places (e.g., 0.82)
 

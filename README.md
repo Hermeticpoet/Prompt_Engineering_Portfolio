@@ -42,7 +42,9 @@ This portfolio reflects my commitment to authenticity, clarity, and reproducibil
 
 **Notes**
 Location: Dublin, Ireland
+
 Date of completion: December 2025
+
 Repository: [Prompt Engineering Portfolio](https://github.com/Hermeticpoet/Prompt_Engineering_Portfolio)
 
 ## Models Evaluated

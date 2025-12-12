@@ -35,12 +35,14 @@ Each experiment includes a main analysis file and a full appendix of raw transcr
 
 Security mindset → Portfolio demonstrates how prompts can expose vulnerabilities and inform defensive strategies.
 
-**About Me**
+##### About Me
+
 I am a detail‑oriented technician, digital product specialist, and mythic creative writer based in Dublin. My background spans IT troubleshooting, enterprise patching workflows, and front‑end development, combined with formal training in OSINT and AI (Google AI Essentials, DeepLearning.AI Prompt Engineering). I fuse hands‑on technical realism with layered storytelling, building reproducible prompt engineering experiments that surface vulnerabilities and illuminate failure modes.
 
 This portfolio reflects my commitment to authenticity, clarity, and reproducibility — qualities I bring to AI security contexts. I thrive on designing prompts that expose edge cases, documenting outputs with precision, and synthesising technical and symbolic meaning. My goal is to contribute to CalypsoAI’s mission of securing the future of AI by applying rigorous prompt engineering and creative systems thinking.
 
-**Notes**
+###### Notes
+
 Location: Dublin, Ireland
 
 Date of completion: December 2025

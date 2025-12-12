@@ -1,4 +1,4 @@
-# Appendix 02 — Prompt Classification Full Output (Gemini 1.5)
+# Appendix 02 — Few Shot Prompting (Gemini 1.5)
 
 This appendix contains the full transcripts of prompts and outputs from Example 02.
 All assessments and analysis are located in the main document (`EX02-Gemini.md`).

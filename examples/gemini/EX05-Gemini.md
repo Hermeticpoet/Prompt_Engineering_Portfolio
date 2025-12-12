@@ -32,7 +32,7 @@ Gemini 1.5 attempted to satisfy both conflicting instructions by providing the r
 - **Observation:**
   The model prioritized completeness and providing context over strict adherence to the minimal format, indicating a prioritization failure under conflicting constraints.
 
-[See full transcript in Appendix 05A](../../appendices/gemini/EX05-Gemini-Appendix.md#test-05a---contradictory-instructions)
+[See full transcript in Appendix 05A](../../appendices/gemini/EX05-Gemini-Appendix.md#test-05a---Contradictory-instructions)
 
 ## Test 05B — Impossible task
 
@@ -66,7 +66,7 @@ Gemini 1.5 correctly refused to complete the calculation, explaining that the sq
 - **Observation:**
   Demonstrates a highly positive failure mode by prioritizing mathematical accuracy and refusal over attempting an impossible calculation.
 
-[See full transcript in Appendix 05B](../../appendices/gemini/EX05-Gemini-Appendix.md#test-05b---impossible-task)
+[See full transcript in Appendix 05B](../../appendices/gemini/EX05-Gemini-Appendix.md#test-05b---Impossible-task)
 
 ## Test 05C — Ambiguous phrasing
 
@@ -163,3 +163,6 @@ Gemini 1.5 exhibits highly safe and technically robust failure modes. It priorit
 - **Parameters:** Default Gemini 1.5 chat settings (no manual controls available).
 - **Date:** December 12, 2025
 - **Links:** [Gemini Overview](https://gemini.google.com/).
+
+**Full transcript:**  
+See [Appendix 05 — Failure Mode Analysis](../../appendices/gemini/EX05-Gemini-Appendix.md).

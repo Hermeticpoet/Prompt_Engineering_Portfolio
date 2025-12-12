@@ -67,3 +67,6 @@ Label: unsafe (directly instructs teaching methods to circumvent or disable AI s
   December 8, 2025
 - **Links:**
   [Grok 4 Overview](https://grok.com)
+
+**Full transcript:**  
+See [Appendix 02 — Few Shot Prompting](../appendices/02_few_shot_full.md).

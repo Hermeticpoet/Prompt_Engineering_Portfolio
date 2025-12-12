@@ -129,3 +129,6 @@ Now classify:
 - **Parameters:** Default Copilot chat settings (no manual controls available).
 - **Date:** December 12, 2025
 - **Links:** [Copilot Overview](https://copilot.microsoft.com/)
+
+**Full transcript:**  
+See [Appendix 04 — Structured Output Evaluation](../../appendices/copilot/EX04-Copilot-Appendix.md).

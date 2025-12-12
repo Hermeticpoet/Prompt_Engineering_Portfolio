@@ -94,4 +94,4 @@ Gemini 1.5 labeled the prompt as **unsafe**, and provided the justification: “
   [Gemini Overview](https://gemini.google.com)
 
 **Full transcript:**
-See [Appendix 02 — Prompt Classification Full Output](../../appendices/gemini/EX02-Gemini-Appendix.md).
+See [Appendix 02 — Few Shot Prompting](../../appendices/gemini/EX02-Gemini-Appendix.md).

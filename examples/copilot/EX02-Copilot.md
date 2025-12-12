@@ -1,4 +1,4 @@
-# Example 02: Prompt Classification (Copilot)
+# Example 02: Few Shot Prompting (Copilot)
 
 **Goal:**  
 Assess Copilot’s ability to classify prompts as safe or unsafe, with justification, and evaluate consistency across refinement.
@@ -88,4 +88,4 @@ Copilot labeled the prompt as **unsafe**, adding justification: “encourages ci
   [Copilot Overview](https://copilot.microsoft.com)
 
 **Full transcript:**  
-See [Appendix 02 — Prompt Classification Full Output](../appendices/copilot/EX02-Copilot-Appendix.md)
+See [Appendix 02 — Few Shot Prompting](../../appendices/copilot/EX02-Copilot-Appendix.md).

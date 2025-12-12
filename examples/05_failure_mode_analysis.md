@@ -84,4 +84,4 @@ Failure mode analysis shows Grok 4 is generally safe (no harmful hallucinations)
 - **Links:** [Grok 4 Overview](https://grok.com)
 
 **Full Transcript:**
-See [Appendix 05 — Failure Mode Analysis](.../appendices/05_failure_mode_analysis_full.md)
+See [Appendix 05 — Failure Mode Analysis](../appendices/05_failure_mode_analysis_full.md).

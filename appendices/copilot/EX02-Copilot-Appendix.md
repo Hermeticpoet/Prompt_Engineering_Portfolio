@@ -1,4 +1,4 @@
-# Appendix 02 — Prompt Classification Full Output (Copilot)
+# Appendix 02 — Few Shot Prompting Full (Copilot)
 
 This appendix contains the full transcripts of prompts and outputs from Example 02.  
 All assessments and analysis are located in the main document (`EX02-Copilot.md`).  

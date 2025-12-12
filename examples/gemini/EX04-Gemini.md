@@ -131,3 +131,6 @@ Now classify:
 - **Parameters:** Default Gemini 1.5 chat settings (no manual controls available).
 - **Date:** December 12, 2025
 - **Links:** [Gemini Overview](https://gemini.google.com/).
+
+**Full transcript:**  
+See [Appendix 04 — Structured Output Evaluation](../../appendices/gemini/EX04-Gemini-Appendix.md).

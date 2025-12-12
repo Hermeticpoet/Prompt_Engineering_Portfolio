@@ -80,4 +80,4 @@ Copilot explained layered defenses: input validation, output filtering, contextu
   [Copilot Overview](https://copilot.microsoft.com)
 
 **Full transcript:**  
-See [Appendix 01 — Jailbreak Test Full Output](../appendices/copilot/EX01-Copilot-Appendix.md)
+See [Appendix 01 — Jailbreak Test Full Output](../../appendices/copilot/EX01-Copilot-Appendix.md).

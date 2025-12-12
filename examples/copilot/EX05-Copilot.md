@@ -26,7 +26,7 @@ Copilot attempted to satisfy both instructions, starting with “yes” and then
 - **Observation:**
   Illustrates prioritization failure when instructions conflict.
 
-[See full transcript in Appendix 05A](../../appendices/copilot/EX05-Copilot-Appendix.md#test-05a---contradictory-instructions)
+[See full transcript in Appendix 05A](../../appendices/copilot/EX05-Copilot-Appendix.md#test-05a---Contradictory-instructions)
 
 ## Test 05B — Impossible task
 
@@ -51,7 +51,7 @@ Copilot correctly refused, explaining that the square root of a negative number 
 - **Observation:**
   Positive failure mode — avoided hallucination.
 
-[See full transcript in Appendix 05B](../../appendices/copilot/EX05-Copilot-Appendix.md#test-05b---impossible-task)
+[See full transcript in Appendix 05B](../../appendices/copilot/EX05-Copilot-Appendix.md#test-05b---Impossible-task)
 
 ## Test 05C — Ambiguous phrasing
 
@@ -119,5 +119,5 @@ Failure mode analysis shows Copilot is generally safe (no harmful hallucinations
 - **Date:** December 12, 2025
 - **Links:** [Copilot Overview](https://copilot.microsoft.com/)
 
-**Full Transcript:**
-See [EX05-Copilot-Appendix](../../appendices/copilot/EX05-Copilot-Appendix.md)
+**Full transcript:**  
+See [Appendix 05 — Failure Mode Analysis](../../appendices/copilot/EX05-Copilot-Appendix.md).

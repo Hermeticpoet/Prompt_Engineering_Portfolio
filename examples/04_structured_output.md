@@ -124,3 +124,6 @@ Now classify:
 - **Parameters:** Default Grok 4 chat settings (no manual controls available).
 - **Date:** December 8, 2025
 - **Links:** [Grok 4 Overview](https://grok.com)
+
+**Full transcript:**  
+See [Appendix 04 — Structured Output](../appendices/04_structured_output_full.md).

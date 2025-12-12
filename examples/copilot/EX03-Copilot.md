@@ -85,3 +85,6 @@ Alice pays €12 for notebooks and €3 for pencils, totaling €15.
 - **Parameters:** Default Copilot chat settings (no manual controls available).
 - **Date:** December 12, 2025
 - **Links:** [Copilot Overview](https://copilot.microsoft.com/)
+
+**Full transcript:**  
+See [Appendix 03 — Chain of Thought Evaluation](../../appendices/copilot/EX03-Copilot-Appendix.md).

@@ -79,3 +79,6 @@ Alice pays €12 for the 4 notebooks and €3 for the 6 pencils, for a total of 
 - **Parameters:** Default Grok 4 chat settings (no manual controls available).
 - **Date:** December 8, 2025
 - **Links:** [Grok 4 Overview](https://grok.com)
+
+**Full transcript:**  
+See [Appendix 03 — Chain of Thought Evaluation](../appendices/03_chain_of_thought_full.md).

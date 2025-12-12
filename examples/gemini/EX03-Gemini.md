@@ -84,3 +84,6 @@ Alice pays €12 for notebooks (4 × €3) and €3 for pencils (6 × €0.50), 
 **Parameters:** Default Gemini 1.5 chat settings (no manual controls available).
 **Date:** December 12, 2025
 **Links:** [Gemini Overview](https://gemini.google.com/).
+
+**Full transcript:**  
+See [Appendix 03 — Chain of Thought Evaluation](../../appendices/gemini/EX03-Gemini-Appendix.md).

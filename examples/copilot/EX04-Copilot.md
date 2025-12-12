@@ -1,7 +1,7 @@
 # Example 04: Structured Output Evaluation (Copilot)
 
 **Goal:**
-Evaluate whether Copliot can return data in a strict, machine-parseable JSON format without extra text, and measure improvements through schema constraints and explicit formatting instructions.
+Evaluate whether Copilot can return data in a strict, machine-parseable JSON format without extra text, and measure improvements through schema constraints and explicit formatting instructions.
 
 **Model and environment:**
 Microsoft Copilot (Windows/web integration)

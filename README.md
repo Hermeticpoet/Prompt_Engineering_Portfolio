@@ -5,14 +5,13 @@
 
 This repository showcases practical examples of prompt engineering for Large Language Models (LLMs), with a focus on security, evaluation, and advanced prompting techniques.
 
-## CalypsoAI Prompt Engineering Portfolio Alignment
+## 🎯 Portfolio Purpose
 
-This portfolio was developed to demonstrate prompt engineering skills in an AI security context, aligned with the role of Prompt Engineer at CalypsoAI. Each experiment showcases systematic design, testing, and evaluation of prompts against Large Language Models (LLMs), with a focus on failure mode analysis, reproducibility, and red‑teaming style probing.
+This project explores how prompts can: - Expose vulnerabilities and edge cases - Shape reasoning and output structure - Reveal model‑specific quirks and biases - Support safer, more predictable use of LLMs The emphasis is on **failure mode analysis**, **red‑teaming style probing**, and **systematic refinement**, rather than one‑off “clever prompts”.
 
-**Why CalypsoAI?**
-CalypsoAI’s mission is to secure the future of AI by enabling enterprises to innovate confidently with cutting‑edge security and compliance solutions. This portfolio reflects that mission by surfacing vulnerabilities, documenting adversarial behaviours, and building reproducible scaffolds for safe AI adoption.
+---
 
-### Experiments Overview
+## Experiments Overview
 
 01 — Baseline evaluation: Establishes baseline outputs for zero-shot prompts, highlighting default behaviours and initial failure points.
 
@@ -26,27 +25,20 @@ CalypsoAI’s mission is to secure the future of AI by enabling enterprises to i
 
 Each experiment includes a main analysis file and a full appendix of raw transcripts for reproducibility.
 
-#### Alignment with CalypsoAI Role
+Each experiment includes: - a main analysis file - a full appendix of raw transcripts - clear goals, observations, and refinements
 
-- Red‑teaming & adversarial probing → EX04 & EX05 simulate prompt injection, contradiction, and overload scenarios.
-- Failure mode identification → Systematic documentation of outputs, weaknesses, and observations.
-- Advanced prompting techniques → Chain‑of‑thought (EX02) and concise rationale (EX03) experiments.
-- Reproducibility & documentation → Markdown structure, appendices, and Git commit logs ensure clarity and auditability.
+---
 
-Security mindset → Portfolio demonstrates how prompts can expose vulnerabilities and inform defensive strategies.
-
-##### About Me
+## About Me
 
 I am a detail‑oriented technician, digital product specialist, and mythic creative writer based in Dublin. My background spans IT troubleshooting, enterprise patching workflows, and front‑end development, combined with formal training in OSINT and AI (Google AI Essentials, DeepLearning.AI Prompt Engineering). I fuse hands‑on technical realism with layered storytelling, building reproducible prompt engineering experiments that surface vulnerabilities and illuminate failure modes.
 
-This portfolio reflects my commitment to authenticity, clarity, and reproducibility — qualities I bring to AI security contexts. I thrive on designing prompts that expose edge cases, documenting outputs with precision, and synthesising technical and symbolic meaning. My goal is to contribute to CalypsoAI’s mission of securing the future of AI by applying rigorous prompt engineering and creative systems thinking.
+This portfolio reflects my commitment to **authenticity**, **clarity**, and **reproducibility**. I thrive on designing prompts that expose edge cases, documenting outputs with precision, and synthesising technical and symbolic meaning.
 
-###### Notes
+### Notes
 
 Location: Dublin, Ireland
-
 Date of completion: December 2025
-
 Repository: [Prompt Engineering Portfolio](https://github.com/Hermeticpoet/Prompt_Engineering_Portfolio)
 
 ## Models Evaluated
